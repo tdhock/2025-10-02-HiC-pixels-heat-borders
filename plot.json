@@ -1,0 +1,955 @@
+{
+ "geoms": {
+ "geom1_polygon_pixels": {
+ "geom": "polygon",
+"classed": "geom1_polygon_pixels",
+"aes": {
+ "x": "x",
+"y": "y",
+"fill": "logFC",
+"colour": "neg.log10.p",
+"group": "r1r2" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false 
+},
+"types": {
+ "colour": "rgb",
+"fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_polygon_pixels": {
+ "geom": "polygon",
+"classed": "geom2_polygon_pixels",
+"aes": {
+ "x": "x",
+"y": "y",
+"group": "r1r2",
+"clickSelects": "r1r2" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"alpha":        1,
+"colour": "#00FF00",
+"clickSelects": "r1r2",
+"alpha_off":        1,
+"colour_off": "transparent",
+"help_clickSelects": "r1r2" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"clickSelects": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom3_tile_volcanoHeat": {
+ "geom": "rect",
+"classed": "geom3_tile_volcanoHeat",
+"aes": {
+ "x": "round_logFC",
+"y": "round_neg.log10.p",
+"fill": "log10(pixels)" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"size":      0.5 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_volcanoHeat": {
+ "geom": "point",
+"classed": "geom4_point_volcanoHeat",
+"aes": {
+ "x": "logFC",
+"y": "neg.log10.p",
+"showSelected1": "r1r2" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#00FF00",
+"showSelected": "r1r2",
+"help_showSelected": "r1r2" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_tile_volcanoHeat": {
+ "geom": "rect",
+"classed": "geom5_tile_volcanoHeat",
+"aes": {
+ "x": "round_logFC",
+"y": "round_neg.log10.p",
+"tooltip": "paste(volcano_bin, \"pixels=\", pixels)",
+"clickSelects": "volcano_bin" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"clickSelects": "volcano_bin",
+"help_clickSelects": "volcano_bin" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"tooltip": "character",
+"clickSelects": "character",
+"PANEL": "integer",
+"group": "character",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom6_point_volcanoZoom": {
+ "geom": "point",
+"classed": "geom6_point_volcanoZoom",
+"aes": {
+ "x": "relative_logFC",
+"y": "relative_neg.log10.p",
+"clickSelects": "r1r2",
+"showSelected1": "volcano_bin" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"colour": "#000000",
+"fill": "#00FF00",
+"clickSelects": "r1r2",
+"showSelected": "volcano_bin",
+"colour_off": "#7F7F7F",
+"fill_off": "#FFFFFF",
+"help_clickSelects": "r1r2",
+"help_showSelected": "volcano_bin" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_point_volcanoZoom": {
+ "geom": "point",
+"classed": "geom7_point_volcanoZoom",
+"aes": {
+ "x": "relative_logFC",
+"y": "relative_neg.log10.p",
+"clickSelects": "r1r2",
+"showSelected1": "volcano_bin",
+"showSelected2": "r1r2" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"colour": "#000000",
+"fill": "#00FF00",
+"clickSelects": "r1r2",
+"showSelected": [ "volcano_bin", "r1r2" ],
+"colour_off": "#7F7F7F",
+"fill_off": "#FFFFFF",
+"help_clickSelects": "r1r2",
+"help_showSelected": [ "volcano_bin", "r1r2" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "r1r2": {
+ "is.variable.value": false,
+"type": "multiple",
+"clickSelects": true,
+"showSelected": true,
+"selected": [ "48092-48092", "48093-48093", "48094-48094", "48095-48095", "48096-48096" ],
+"update": [
+ "geom2_polygon_pixels",
+"geom4_point_volcanoHeat",
+"geom6_point_volcanoZoom",
+"geom7_point_volcanoZoom" 
+] 
+},
+"volcano_bin": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "logFC=-1.5 -log10(p)=6",
+"levels": [ "logFC=-1.5 -log10(p)=6", "logFC=-1.5 -log10(p)=9", "logFC=-1.5 -log10(p)=7", "logFC=-1.5 -log10(p)=8", "logFC=-1 -log10(p)=2", "logFC=-1.75 -log10(p)=4", "logFC=-0.75 -log10(p)=1", "logFC=-1.5 -log10(p)=1", "logFC=-0.5 -log10(p)=0", "logFC=0 -log10(p)=0", "logFC=0.75 -log10(p)=0", "logFC=0.25 -log10(p)=0", "logFC=0.5 -log10(p)=0", "logFC=-1 -log10(p)=0", "logFC=-1.25 -log10(p)=0", "logFC=-2 -log10(p)=1", "logFC=1 -log10(p)=0", "logFC=-4 -log10(p)=1", "logFC=-3 -log10(p)=1", "logFC=-0.25 -log10(p)=0", "logFC=-2.75 -log10(p)=1", "logFC=-0.75 -log10(p)=0", "logFC=-2.25 -log10(p)=1", "logFC=1.75 -log10(p)=1", "logFC=-2 -log10(p)=0", "logFC=-2.5 -log10(p)=1", "logFC=-1.75 -log10(p)=19", "logFC=-1.5 -log10(p)=17", "logFC=-1.5 -log10(p)=16", "logFC=-1.25 -log10(p)=7", "logFC=-2 -log10(p)=8", "logFC=-1 -log10(p)=1", "logFC=-3.25 -log10(p)=1", "logFC=-1.25 -log10(p)=1", "logFC=-3.75 -log10(p)=1", "logFC=-4 -log10(p)=2", "logFC=-3.5 -log10(p)=1", "logFC=-1.25 -log10(p)=22", "logFC=-1 -log10(p)=15", "logFC=-1.25 -log10(p)=11", "logFC=-1.5 -log10(p)=14", "logFC=-0.25 -log10(p)=1", "logFC=-1 -log10(p)=3", "logFC=0.5 -log10(p)=1", "logFC=-1.25 -log10(p)=2", "logFC=-2 -log10(p)=2", "logFC=-1.75 -log10(p)=1", "logFC=-4.25 -log10(p)=2", "logFC=-1 -log10(p)=21", "logFC=-1 -log10(p)=17", "logFC=-1.5 -log10(p)=20", "logFC=-1.25 -log10(p)=13", "logFC=-0.75 -log10(p)=6", "logFC=-0.5 -log10(p)=3", "logFC=-0.5 -log10(p)=2", "logFC=-0.5 -log10(p)=1", "logFC=-1.5 -log10(p)=5", "logFC=-1.75 -log10(p)=2", "logFC=-3.5 -log10(p)=4", "logFC=-2.25 -log10(p)=4", "logFC=-4.25 -log10(p)=6", "logFC=-3 -log10(p)=4", "logFC=-2.75 -log10(p)=3", "logFC=-3.25 -log10(p)=3", "logFC=-4.75 -log10(p)=3", "logFC=-2.25 -log10(p)=2", "logFC=-3 -log10(p)=2", "logFC=-1.25 -log10(p)=24", "logFC=-1 -log10(p)=18", "logFC=-1 -log10(p)=11", "logFC=-0.5 -log10(p)=6", "logFC=-0.75 -log10(p)=2", "logFC=-0.75 -log10(p)=3", "logFC=-1.25 -log10(p)=3", "logFC=-1.5 -log10(p)=2", "logFC=-5 -log10(p)=3", "logFC=-0.5 -log10(p)=8", "logFC=-0.25 -log10(p)=2", "logFC=0 -log10(p)=1", "logFC=0.5 -log10(p)=6", "logFC=0.75 -log10(p)=13", "logFC=0.25 -log10(p)=1", "logFC=-1.25 -log10(p)=5", "logFC=-1.75 -log10(p)=8", "logFC=-1.75 -log10(p)=6", "logFC=-2 -log10(p)=9", "logFC=-1.5 -log10(p)=4", "logFC=-2 -log10(p)=5", "logFC=-2 -log10(p)=4", "logFC=-1.75 -log10(p)=5", "logFC=-1.75 -log10(p)=3", "logFC=-2 -log10(p)=3", "logFC=-0.5 -log10(p)=4", "logFC=-1 -log10(p)=4", "logFC=-1.25 -log10(p)=6", "logFC=-1.25 -log10(p)=4", "logFC=-1.5 -log10(p)=3", "logFC=-0.5 -log10(p)=10", "logFC=-0.25 -log10(p)=5", "logFC=-0.5 -log10(p)=11", "logFC=-0.75 -log10(p)=11", "logFC=-0.5 -log10(p)=5", "logFC=-0.75 -log10(p)=9", "logFC=-1 -log10(p)=5", "logFC=-1.75 -log10(p)=7", "logFC=-2 -log10(p)=6", "logFC=-0.5 -log10(p)=7", "logFC=-0.75 -log10(p)=10", "logFC=-0.75 -log10(p)=4", "logFC=-0.75 -log10(p)=16", "logFC=-0.75 -log10(p)=13", "logFC=-0.25 -log10(p)=3", "logFC=-0.75 -log10(p)=8", "logFC=-1 -log10(p)=6", "logFC=-1 -log10(p)=7", "logFC=-0.5 -log10(p)=13", "logFC=-0.25 -log10(p)=6", "logFC=-0.75 -log10(p)=5", "logFC=-1.25 -log10(p)=9", "logFC=-2 -log10(p)=7", "logFC=-0.75 -log10(p)=17", "logFC=-1.75 -log10(p)=9", "logFC=-0.75 -log10(p)=12", "logFC=0.25 -log10(p)=2", "logFC=-0.5 -log10(p)=14", "logFC=-0.25 -log10(p)=4", "logFC=-0.75 -log10(p)=7", "logFC=-1.25 -log10(p)=8", "logFC=-0.75 -log10(p)=18", "logFC=-0.75 -log10(p)=14", "logFC=-0.75 -log10(p)=15", "logFC=-0.5 -log10(p)=12", "logFC=-0.5 -log10(p)=9", "logFC=-0.75 -log10(p)=19", "logFC=0.5 -log10(p)=3", "logFC=0.75 -log10(p)=1", "logFC=0.5 -log10(p)=4", "logFC=0.5 -log10(p)=2", "logFC=1 -log10(p)=2", "logFC=0.75 -log10(p)=3", "logFC=0.25 -log10(p)=3", "logFC=0.5 -log10(p)=5", "logFC=0.75 -log10(p)=5", "logFC=0.75 -log10(p)=2", "logFC=1 -log10(p)=5", "logFC=1 -log10(p)=4", "logFC=0.25 -log10(p)=4", "logFC=0.75 -log10(p)=4", "logFC=1 -log10(p)=6", "logFC=1.25 -log10(p)=6", "logFC=1 -log10(p)=1", "logFC=-0.75 -log10(p)=20", "logFC=-0.5 -log10(p)=15", "logFC=-3 -log10(p)=7", "logFC=-2.25 -log10(p)=3", "logFC=-0.25 -log10(p)=7", "logFC=-4.75 -log10(p)=2", "logFC=-2.5 -log10(p)=4", "logFC=1.25 -log10(p)=1", "logFC=-2.75 -log10(p)=10", "logFC=-2.25 -log10(p)=7", "logFC=-4.5 -log10(p)=2", "logFC=-2.5 -log10(p)=2", "logFC=-0.5 -log10(p)=16", "logFC=-1 -log10(p)=9", "logFC=-2.25 -log10(p)=6", "logFC=-2.75 -log10(p)=9", "logFC=-3.75 -log10(p)=2", "logFC=-2.25 -log10(p)=5", "logFC=-1 -log10(p)=23", "logFC=-1 -log10(p)=19", "logFC=-1 -log10(p)=8", "logFC=-0.75 -log10(p)=21", "logFC=-1 -log10(p)=14", "logFC=-1 -log10(p)=12", "logFC=-1 -log10(p)=10", "logFC=-2.75 -log10(p)=2", "logFC=-1.25 -log10(p)=25", "logFC=-1.5 -log10(p)=23", "logFC=-1.25 -log10(p)=16", "logFC=-1.25 -log10(p)=10", "logFC=-1.25 -log10(p)=20", "logFC=-1 -log10(p)=20", "logFC=1.5 -log10(p)=1", "logFC=-1 -log10(p)=24", "logFC=-2.75 -log10(p)=4", "logFC=1 -log10(p)=17", "logFC=-3 -log10(p)=3", "logFC=-5.25 -log10(p)=4", "logFC=-1.25 -log10(p)=15", "logFC=-1.75 -log10(p)=27", "logFC=-1.75 -log10(p)=13", "logFC=-1.75 -log10(p)=12", "logFC=-1.25 -log10(p)=18", "logFC=-1 -log10(p)=13", "logFC=-1.25 -log10(p)=14", "logFC=-1.5 -log10(p)=11", "logFC=-1 -log10(p)=16", "logFC=-3.75 -log10(p)=4", "logFC=-1 -log10(p)=22", "logFC=-2.5 -log10(p)=6", "logFC=-2.5 -log10(p)=3", "logFC=-2.25 -log10(p)=11", "logFC=-2.5 -log10(p)=8", "logFC=-2.75 -log10(p)=5", "logFC=-2 -log10(p)=10", "logFC=-2.5 -log10(p)=9", "logFC=-2.5 -log10(p)=7", "logFC=-2.25 -log10(p)=14", "logFC=-2.75 -log10(p)=14", "logFC=-2.25 -log10(p)=8", "logFC=-2 -log10(p)=18", "logFC=-2.25 -log10(p)=18", "logFC=-2.5 -log10(p)=14", "logFC=-2.25 -log10(p)=9", "logFC=-2.5 -log10(p)=11", "logFC=-1.75 -log10(p)=20", "logFC=-2 -log10(p)=21", "logFC=-2 -log10(p)=17", "logFC=-2 -log10(p)=14", "logFC=-2.5 -log10(p)=15", "logFC=-1.75 -log10(p)=10", "logFC=-1.5 -log10(p)=18", "logFC=-1.5 -log10(p)=13", "logFC=-1.75 -log10(p)=17", "logFC=-1.25 -log10(p)=21", "logFC=-2 -log10(p)=19", "logFC=-2.25 -log10(p)=21", "logFC=-1.75 -log10(p)=15", "logFC=-2 -log10(p)=16", "logFC=-1.5 -log10(p)=21", "logFC=-1.75 -log10(p)=24", "logFC=-2 -log10(p)=23", "logFC=-1.25 -log10(p)=17", "logFC=-1.25 -log10(p)=12", "logFC=-1.25 -log10(p)=19" ],
+"update": [
+ "geom5_tile_volcanoHeat",
+"geom6_point_volcanoZoom",
+"geom7_point_volcanoZoom" 
+] 
+} 
+},
+"plots": {
+ "pixels": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "log(fold change)": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "log(fold change)",
+"class": "log(fold change)",
+"selector": null,
+"is_discrete": false,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#DBD7EC",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "1" 
+},
+{
+ "polygonfill": "#FFFFFF",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "0" 
+},
+{
+ "polygonfill": "#ECD4D1",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-1" 
+},
+{
+ "polygonfill": "#D7ABA5",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-2" 
+},
+{
+ "polygonfill": "#BF827B",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-3" 
+},
+{
+ "polygonfill": "#A75A53",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-4" 
+},
+{
+ "polygonfill": "#8C312E",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-5" 
+} 
+] 
+},
+"-log10(P value)": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "-log10(P value)",
+"class": "-log10(P value)",
+"selector": null,
+"is_discrete": false,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygoncolour": "#3E3E3E",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "20" 
+},
+{
+ "polygoncolour": "#6A6A6A",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "15" 
+},
+{
+ "polygoncolour": "#999999",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "10" 
+},
+{
+ "polygoncolour": "#CBCBCB",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "5" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+    48090,
+   48120,
+   48150,
+   48180 
+] 
+],
+"y": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+    48090,
+   48105,
+   48120,
+   48135,
+   48150,
+   48165,
+   48180,
+   48195 
+] 
+],
+"y": [
+ [
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5,
+      20,
+    22.5,
+      25 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+    48090,
+   48120,
+   48150,
+   48180 
+],
+"xlab": [
+ "48090",
+"48120",
+"48150",
+"48180" 
+],
+"xrange": [ 48086.21, 48204.79 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+],
+"ylab": [
+ "0",
+"5",
+"10",
+"15",
+"20",
+"25" 
+],
+"yrange": [   -1.665,   26.165 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Position on chr19 (kb)",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Distance from position",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "48090",
+"48120",
+"48150",
+"48180" 
+],
+"ylabs": [
+ "0",
+"5",
+"10",
+"15",
+"20",
+"25" 
+],
+"title": "Genomic interaction plot, select pixels",
+"title_size": "14.4pt",
+"options": {
+ "width":     1200,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan":        3,
+"last_in_row": true 
+},
+"geoms": [
+ "geom1_polygon_pixels",
+"geom2_polygon_pixels" 
+] 
+},
+"volcanoHeat": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "log10(pixels)": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "log10(pixels)",
+"class": "log10(pixels)",
+"selector": null,
+"is_discrete": false,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#111111",
+"polygoncolour": "#BEBEBE",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "2.5" 
+},
+{
+ "polygonfill": "#393939",
+"polygoncolour": "#BEBEBE",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "2.0" 
+},
+{
+ "polygonfill": "#666666",
+"polygoncolour": "#BEBEBE",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "1.5" 
+},
+{
+ "polygonfill": "#969696",
+"polygoncolour": "#BEBEBE",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "1.0" 
+},
+{
+ "polygonfill": "#C9C9C9",
+"polygoncolour": "#BEBEBE",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "0.5" 
+},
+{
+ "polygonfill": "#FFFFFF",
+"polygoncolour": "#BEBEBE",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "0.0" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -4,
+      -2,
+       0,
+       2 
+] 
+],
+"y": [
+ [
+        0,
+      10,
+      20 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+      -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1,
+       2 
+] 
+],
+"y": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -4,
+      -2,
+       0,
+       2 
+],
+"xlab": [
+ "-4",
+"-2",
+"0",
+"2" 
+],
+"xrange": [  -5.7375,   2.2375 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+      10,
+      20 
+],
+"ylab": [
+ "0",
+"10",
+"20" 
+],
+"yrange": [     -1.9,     28.9 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "log(fold change)",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "-log10(P value)",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-4",
+"-2",
+"0",
+"2" 
+],
+"ylabs": [
+ "0",
+"10",
+"20" 
+],
+"title": "Volcano, select tile",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom3_tile_volcanoHeat",
+"geom4_point_volcanoHeat",
+"geom5_tile_volcanoHeat" 
+] 
+},
+"volcanoZoom": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     -0.1,
+   -0.05,
+       0,
+    0.05,
+     0.1 
+] 
+],
+"y": [
+ [
+     -0.5,
+   -0.25,
+       0,
+    0.25,
+     0.5 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+   -0.125,
+    -0.1,
+  -0.075,
+   -0.05,
+  -0.025,
+       0,
+   0.025,
+    0.05,
+   0.075,
+     0.1,
+   0.125 
+] 
+],
+"y": [
+ [
+     -0.5,
+  -0.375,
+   -0.25,
+  -0.125,
+       0,
+   0.125,
+    0.25,
+   0.375,
+     0.5 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     -0.1,
+   -0.05,
+       0,
+    0.05,
+     0.1 
+],
+"xlab": [
+ "-0.10",
+"-0.05",
+"0.00",
+"0.05",
+"0.10" 
+],
+"xrange": [ -0.1373673, 0.1373772 ],
+"xline": false,
+"xticks": true,
+"y": [
+     -0.5,
+   -0.25,
+       0,
+    0.25,
+     0.5 
+],
+"ylab": [
+ "-0.50",
+"-0.25",
+"0.00",
+"0.25",
+"0.50" 
+],
+"yrange": [ -0.5493128, 0.5495614 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Relative log(fold change) in tile",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Relative -log10(P value) in tile",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-0.10",
+"-0.05",
+"0.00",
+"0.05",
+"0.10" 
+],
+"ylabs": [
+ "-0.50",
+"-0.25",
+"0.00",
+"0.25",
+"0.50" 
+],
+"title": "Volcano zoom, select pixels",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom6_point_volcanoZoom",
+"geom7_point_volcanoZoom" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/hicream-viz/blob/main/data-2025-10-02/figure-pixels-volcano-interactive-heat-borders.R",
+"title": "Hi-C pixel heat map with borders linked to zoomable volcano plot" 
+}
